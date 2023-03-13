@@ -15,7 +15,7 @@ contract StarNotary is ERC721 {
     // name: Is a short name to your token
     // symbol: Is a short string like 'USD' -> 'American Dollar'
     
-    constructor(string memory name_, string memory symbol_) public ERC721 (name_, symbol_) {}
+    constructor() public ERC721 ('Rocky Star Token', 'RST') {}
 
     // mapping the Star with the Owner Address
     mapping(uint256 => Star) public tokenIdToStarInfo;
