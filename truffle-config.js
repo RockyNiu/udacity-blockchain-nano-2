@@ -22,7 +22,7 @@
  *
  */
 
-const HDWallet = require('@truffle/hdwallet-provider');
+const HDWalletProvider = require('@truffle/hdwallet-provider');
 const infuraKey = "2ce4e1bedb6f484e983afb7d614a0543";
 //
 const fs = require('fs');
@@ -52,6 +52,12 @@ module.exports = {
       network_id: "*",       // Any network (default: none)
     },
 
+    sepolia: {
+      provider: () => new HDWalletProvider(mnemonic, `https://sepolia.infura.io/v3/${infuraKey}`),
+        network_id: 11155111,       // sepolia's id
+        gas: 5000000,
+        gasPrice: 1000000
+    },
     // Another network with more advanced options...
     // advanced: {
       // port: 8777,             // Custom port
