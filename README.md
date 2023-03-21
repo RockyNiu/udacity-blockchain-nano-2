@@ -1,3 +1,5 @@
+# Rocky Star Token DApp
+  A Decentralized Star Notary Service 
 * Truffle v5.8.0 (core: 5.8.0)
 * ERC-721 Token Name - Rocky Star Token
 * ERC-721 Token Symbol - RST
